@@ -41,13 +41,13 @@ npm run build
         calculator.js - interactive logic for calculator
         main.js
     index.html
-    /tasks - various Grunt tasks
-        ...
-        ...
-    Gruntfile.js - "registers" all available tasks for the project
-    package.json
-    project.json
-    README.md
+/tasks - various Grunt tasks
+    ...
+    ...
+Gruntfile.js - "registers" all available tasks for the project
+package.json
+project.json
+README.md
 ```
 
 ## Creating the SVG
