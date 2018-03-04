@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/seattletimes/st3-voter-guide.git"
   },
+  "scripts": {
+    "build": "grunt"
+  },
   "dependencies": {
     "async": "^2.0.0-rc.1",
     "aws-sdk": "^2.2.45",
@@ -31,7 +34,6 @@
     "typogr": "^0.6.4"
   },
   "browser": {
-    "share": "./src/js/lib/share.min.js",
     "angular": "angular/angular.min",
     "jquery": "jquery/dist/jquery.min",
     "leaflet": "leaflet/dist/leaflet.js",

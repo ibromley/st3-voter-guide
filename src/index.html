@@ -1,16 +1,11 @@
 <!doctype html>
 <html>
   <head>
-    <%= t.include("partials/_head.html") %>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
 
-    <%= t.include("partials/_nav.html") %>
-
     <header class="intro">
-
-      <%= t.include("partials/_ad.html", { type: "banner" }) %>
 
       <div class="splash animation">
         <img src="./assets/animation/background.jpg" class="background">
@@ -249,32 +244,9 @@ var cash = function(n) {
       </div>
     </section>
 
-    <section class="text-block">
-      <%= t.include("partials/_dontMiss.html", { data: [{
-        head: "Light-rail stations could open years earlier under new Sound Transit plan",
-        link: "http://www.seattletimes.com/seattle-news/transportation/light-rail-stations-could-open-sooner-under-new-sound-transit-plan/",
-        image: "teasers/sooner.jpg"
-      }, {
-        head: "25-year wait for Sound Transit to finish light rail? Here’s why",
-        link: "http://www.seattletimes.com/seattle-news/transportation/25-year-wait-for-sound-transit-to-finish-light-rail-heres-why/",
-        image: "teasers/tunneler.jpg"
-      }, {
-        head: "Sound Transit 3 taxes: How much you’d pay and for how long",
-        link: "http://www.seattletimes.com/seattle-news/transportation/breaking-down-the-54-billion-sound-transit-3-initiative/",
-        image: "teasers/taxes.jpg"
-      }, {
-        head: "Proposed light-rail expansion includes 8,560 park-and-ride stalls — but is it enough?",
-        link: "http://www.seattletimes.com/seattle-news/transportation/bigger-park-and-rides-find-place-in-sound-transit-ballot-measure/",
-        image: "teasers/park-and-rides.jpg"
-      }] }) %>
-    </section>
 
-    <%= t.include("partials/_navBottom.html") %>
 
     <script src="app.js" async></script>
-    <% if (json.project.production) { %>
-    <%= !json.project.embedded ? t.include("partials/_foot.html") : "" %>
-    <%= t.include("partials/_workHere.html") %>
-    <% } %>
+
   </body>
 </html>
